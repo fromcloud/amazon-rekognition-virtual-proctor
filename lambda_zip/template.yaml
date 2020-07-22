@@ -258,7 +258,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.indexHandler
-      CodeUri: s3://<mybucket>/89a4e518746c7e5dd2963cd00ee0a899
+      CodeUri: s3://solution-builders-us-west-2/amazon-rekognition-virtual-proctor/v0.8/89a4e518746c7e5dd2963cd00ee0a899
       Events:
         Get:
           Type: Api
@@ -276,7 +276,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.processHandler
-      CodeUri: s3://<mybucket>/89a4e518746c7e5dd2963cd00ee0a899
+      CodeUri: s3://solution-builders-us-west-2/amazon-rekognition-virtual-proctor/v0.8/89a4e518746c7e5dd2963cd00ee0a899
       Events:
         Get:
           Type: Api
@@ -295,7 +295,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      CodeUri: s3://<mybucket>/f5ea2429475b57a4ac9f8a5674c23362
+      CodeUri: s3://solution-builders-us-west-2/amazon-rekognition-virtual-proctor/v0.8/f5ea2429475b57a4ac9f8a5674c23362
       Description: Custom Lambda resource for the Virtual Proctor Cloudformation Stack
       Environment:
         Variables:
